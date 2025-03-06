@@ -3,8 +3,7 @@ from langchain_community.chat_models import ChatPerplexity
 import streamlit as st
 from langchain_core.prompts import ChatPromptTemplate  # type: ignore
 
-st.title("LLM powered Model Info Application")
-
+st.title("Explain My Model")
 PPLX_API_KEY = st.text_input("Enter your API key: ", type="password")
 
 
