@@ -1,7 +1,7 @@
 **Explain My Model
 A chatbot application that provides detailed descriptions of machine learning models based on user input. Built using Streamlit, LangChain's ChatPerplexity, and Perplexity AI's API, this tool enables users to gain insights into various ML models interactively.**
 
-###Features
+### Features
 - Interactive Chatbot: Enter the name of a machine learning model to get a detailed explanation.
 
 - Powered by Perplexity AI: Uses the sonar-reasoning model for generating high-quality responses.
@@ -10,7 +10,7 @@ A chatbot application that provides detailed descriptions of machine learning mo
 
 - Streamlit UI: Simple and intuitive interface for seamless interaction.
 
-###Installation
+### Installation
 Follow these steps to set up and run the application locally:
 
 1. Clone the Repository
@@ -33,7 +33,7 @@ Start the Streamlit app:
 
 `streamlit run app.py`
 
-###Usage
+### Usage
 
 - Open the application in your browser (usually at http://localhost:8501).
 
@@ -43,7 +43,7 @@ Start the Streamlit app:
 
 - Click on the "Get Description" button to generate a detailed explanation of the model.
 
-###Code Overview
+### Code Overview
 
 The main functionality of the app is implemented in app.py. Here's a quick breakdown of its components:
 
@@ -96,7 +96,7 @@ The application uses an environment variable for securely handling the Perplexit
 
 - Verify that you're running Python 3.8 or higher.
 
-###Contributing
+### Contributing
 
 **Contributions are welcome! If you'd like to improve this project, please follow these steps:**
 
@@ -111,7 +111,7 @@ The application uses an environment variable for securely handling the Perplexit
 
 - Submit a pull request with a detailed description of your changes.
 
-###Acknowledgments
+### Acknowledgments
 
 - Streamlit for providing an easy-to-use framework for building web apps.
 
