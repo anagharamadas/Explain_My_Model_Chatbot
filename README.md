@@ -1,5 +1,5 @@
-Explain My Model
-A chatbot application that provides detailed descriptions of machine learning models based on user input. Built using Streamlit, LangChain's ChatPerplexity, and Perplexity AI's API, this tool enables users to gain insights into various ML models interactively.
+**Explain My Model
+A chatbot application that provides detailed descriptions of machine learning models based on user input. Built using Streamlit, LangChain's ChatPerplexity, and Perplexity AI's API, this tool enables users to gain insights into various ML models interactively.**
 
 Features
 Interactive Chatbot: Enter the name of a machine learning model to get a detailed explanation.
