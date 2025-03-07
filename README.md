@@ -1,115 +1,120 @@
-Explain My Model
-A chatbot application that provides detailed descriptions of machine learning models based on user input. Built using Streamlit, LangChain's ChatPerplexity, and Perplexity AI's API, this tool enables users to gain insights into various ML models interactively.
+**Explain My Model
+A chatbot application that provides detailed descriptions of machine learning models based on user input. Built using Streamlit, LangChain's ChatPerplexity, and Perplexity AI's API, this tool enables users to gain insights into various ML models interactively.**
 
-Features
-Interactive Chatbot: Enter the name of a machine learning model to get a detailed explanation.
+### Features
+- Interactive Chatbot: Enter the name of a machine learning model to get a detailed explanation.
 
-Powered by Perplexity AI: Uses the sonar-reasoning model for generating high-quality responses.
+- Powered by Perplexity AI: Uses the sonar-reasoning model for generating high-quality responses.
 
-Secure API Key Handling: Users can securely input their Perplexity API key directly in the app.
+- Secure API Key Handling: Users can securely input their Perplexity API key directly in the app.
 
-Streamlit UI: Simple and intuitive interface for seamless interaction.
+- Streamlit UI: Simple and intuitive interface for seamless interaction.
 
-Installation
+### Installation
 Follow these steps to set up and run the application locally:
 
 1. Clone the Repository
    
-git clone https://github.com/your-username/explain-my-model.git
-cd explain-my-model
+`git clone https://github.com/your-username/explain-my-model.git
+cd explain-my-model`
 
 2. Create a Virtual Environment
 
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+`python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate`
 
 3. Install Dependencies
 Install the required Python packages using pip:
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 4. Run the Application
 Start the Streamlit app:
 
-streamlit run app.py
+`streamlit run app.py`
 
-Usage
-Open the application in your browser (usually at http://localhost:8501).
+### Usage
 
-Enter your Perplexity API Key in the provided field.
+- Open the application in your browser (usually at http://localhost:8501).
 
-Input the name of a machine learning model (e.g., "GPT-4", "XGBoost").
+- Enter your Perplexity API Key in the provided field.
 
-Click on the "Get Description" button to generate a detailed explanation of the model.
+- Input the name of a machine learning model (e.g., "GPT-4", "XGBoost").
 
-Code Overview
+- Click on the "Get Description" button to generate a detailed explanation of the model.
+
+### Code Overview
+
 The main functionality of the app is implemented in app.py. Here's a quick breakdown of its components:
 
-Streamlit UI:
+**Streamlit UI:**
 
-Accepts user input for the Perplexity API key and model name.
+- Accepts user input for the Perplexity API key and model name.
 
-Displays generated descriptions or error messages.
+- Displays generated descriptions or error messages.
 
-LangChain Integration:
+**LangChain Integration:**
 
-Uses ChatPerplexity from LangChain's community package to interact with Perplexity's API.
+- Uses ChatPerplexity from LangChain's community package to interact with Perplexity's API.
 
-Error Handling:
+**Error Handling:**
 
-Handles invalid API keys, missing inputs, and API response errors gracefully.
+- Handles invalid API keys, missing inputs, and API response errors gracefully.
 
-Dependencies
+**Dependencies**
 The application requires the following Python libraries:
 
-streamlit
+- streamlit
 
-langchain-community
+- langchain-community
 
-langchain-core
+- langchain-core
 
-requests
+- requests
 
-You can install all dependencies using the provided requirements.txt.
+*You can install all dependencies using the provided requirements.txt.*
 
-Environment Variables
+**Environment Variables**
 The application uses an environment variable for securely handling the Perplexity API key. The key is entered via the UI and stored temporarily in os.environ.
 
-Troubleshooting
-Common Errors:
-401 Authorization Required:
+###Troubleshooting
 
-Ensure your Perplexity API key is valid and correctly entered.
+**Common Errors:**
+   401 Authorization Required:
 
-Verify that your account has sufficient credits.
+- Ensure your Perplexity API key is valid and correctly entered.
 
-Empty Response:
+- Verify that your account has sufficient credits.
 
-Check if the model name you entered is supported by Perplexity's API.
+**Empty Response:**
 
-Application Not Running:
+- Check if the model name you entered is supported by Perplexity's API.
 
-Ensure all dependencies are installed correctly.
+**Application Not Running:**
 
-Verify that you're running Python 3.8 or higher.
+- Ensure all dependencies are installed correctly.
 
-Contributing
-Contributions are welcome! If you'd like to improve this project, please follow these steps:
+- Verify that you're running Python 3.8 or higher.
 
-Fork this repository.
+### Contributing
 
-Create a new branch for your feature or bug fix:
+**Contributions are welcome! If you'd like to improve this project, please follow these steps:**
+
+- Fork this repository.
+
+- Create a new branch for your feature or bug fix:
 
 
-git checkout -b feature-name
+- git checkout -b feature-name
 
-Commit your changes and push them to your forked repository.
+- Commit your changes and push them to your forked repository.
 
-Submit a pull request with a detailed description of your changes.
+- Submit a pull request with a detailed description of your changes.
 
-Acknowledgments
-Streamlit for providing an easy-to-use framework for building web apps.
+### Acknowledgments
 
-LangChain for enabling seamless integration with LLMs.
+- Streamlit for providing an easy-to-use framework for building web apps.
 
-Perplexity AI for their powerful LLM API.
+- LangChain for enabling seamless integration with LLMs.
+
+- Perplexity AI for their powerful LLM API.
