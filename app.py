@@ -10,7 +10,7 @@ PPLX_API_KEY = st.text_input("Enter your API key: ", type="password")
 
 os.environ["PPLX_API_KEY"] = PPLX_API_KEY
 
-chat = ChatPerplexity(temperature=0, pplx_api_key="PPLX_API_KEY", return_intermediate_steps=False, model="sonar-reasoning")
+
 
 
 # User input for the question
@@ -37,6 +37,7 @@ if st.button("Get Description"):
             chat = ChatPerplexity(
                 temperature=0, 
                 pplx_api_key=os.environ["PPLX_API_KEY"],
+                return_intermediate_steps=False,
                 model="sonar-reasoning"
                 )
             internal_reasoning_prompt = ChatPromptTemplate.from_messages([
