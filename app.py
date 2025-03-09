@@ -37,16 +37,15 @@ if st.button("Get Description"):
             chat = ChatPerplexity(
                 temperature=0, 
                 pplx_api_key=os.environ["PPLX_API_KEY"],
-                return_intermediate_steps=False,
-                model="sonar-reasoning"
+                model="sonar-pro"
                 )
             internal_reasoning_prompt = ChatPromptTemplate.from_messages([
-                ("system", "You are a helpful assistant. Reason through the problem without answering yet."),
+                ("system", "You are a helpful assistant."),
                 ("human", "Explain the model {user_question} internally.")
                 ])
             final_response_prompt = ChatPromptTemplate.from_messages([
                 ("system", "You are a helpful assistant. Provide a concise answer."),
-                ("human", "What is the final explanation of the model?")
+                ("human", "What is the final explanation of the model {user_question}?")
             ])
             # Create a chain for internal reasoning
             internal_chain = internal_reasoning_prompt | chat
