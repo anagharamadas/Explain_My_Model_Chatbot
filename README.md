@@ -77,7 +77,7 @@ The application requires the following Python libraries:
 **Environment Variables**
 The application uses an environment variable for securely handling the Perplexity API key. The key is entered via the UI and stored temporarily in os.environ.
 
-###Troubleshooting
+### Troubleshooting
 
 **Common Errors:**
    401 Authorization Required:
